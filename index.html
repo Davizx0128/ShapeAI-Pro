@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#080B14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ShapeAI" />
+  <meta name="description" content="Transforme seu corpo com inteligência" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon-192.svg" />
+  <title>ShapeAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { height: 100%; background: #080B14; color: #E8EDF5; font-family: 'DM Sans', sans-serif; overscroll-behavior: none; }
+    #app { height: 100%; }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 99px; }
+    input, button { font-family: 'DM Sans', sans-serif; }
+    input::placeholder { color: rgba(107,122,153,0.6); }
+    input:focus { outline: none; border-color: rgba(0,245,160,0.5) !important; }
+    .page { min-height: 100vh; animation: fadeIn 0.25s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .card-hover { transition: all 0.22s; }
+    .card-hover:active { transform: scale(0.97); opacity: 0.9; }
+    #install-banner { display: none; position: fixed; bottom: 20px; left: 16px; right: 16px; z-index: 9999;
+      background: linear-gradient(135deg, #0E1420, #131926); border: 1px solid rgba(0,245,160,0.3);
+      border-radius: 18px; padding: 16px 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Install Banner -->
+  <div id="install-banner">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-size:32px;">⚡</span>
+      <div style="flex:1;">
+        <p style="font-weight:800;font-size:15px;margin-bottom:2px;">Instalar ShapeAI</p>
+        <p style="font-size:12px;color:#6B7A99;">Adicione à tela inicial para acesso rápido</p>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button id="install-dismiss" style="background:transparent;border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#6B7A99;padding:8px 12px;cursor:pointer;font-size:13px;">Não</button>
+        <button id="install-btn" style="background:linear-gradient(135deg,#00F5A0,#00D9F5);border:none;border-radius:10px;color:#080B14;padding:8px 14px;cursor:pointer;font-weight:800;font-size:13px;">Instalar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
