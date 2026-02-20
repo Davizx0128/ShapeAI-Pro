@@ -1,0 +1,19 @@
+{
+  "name": "ShapeAI - Fitness Inteligente",
+  "short_name": "ShapeAI",
+  "description": "Transforme seu corpo com inteligência",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080B14",
+  "theme_color": "#080B14",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Exercícios", "url": "./index.html#exercises", "description": "Ver exercícios" },
+    { "name": "Receitas", "url": "./index.html#recipes", "description": "Ver receitas saudáveis" }
+  ],
+  "categories": ["health", "fitness", "lifestyle"]
+}
